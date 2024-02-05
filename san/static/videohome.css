@@ -1,0 +1,55 @@
+.navbar{
+    background-color: #394867;
+}
+
+.kongu{
+    color: white;
+    margin-left: 350px;
+    margin-top: 220px;
+}
+.top{
+    margin-right: 570px;
+}
+.btn{
+    margin-top: -80px;
+    margin-left: 680px;
+    text-decoration:none;
+    background-color: #1D267D;
+    
+    font-weight: bold;
+    
+}
+a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.login{
+    background-color: transparent;
+    color:  #DDF7E3;
+    padding: 0%;
+    border: none;
+}
+.login1{
+    background-color: transparent;
+    color: black;
+    padding: 0%;
+    border: none;
+    margin-right: -100px;
+    margin-left: 90px;
+}
+button a{
+    font-size: larger;
+    font-weight:400;
+}
+
+
+h1{
+    color:  #DDF7E3;
+    margin-left: -90px;
+}
+h4{
+    color:  #DDF7E3;
+    margin-top: 10px;
+    margin-right: -100px;
+}

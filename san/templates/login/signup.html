@@ -1,0 +1,63 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Signup
+        </title>
+        <link rel="stylesheet" href="{% static 'signup.css' %}">
+    </head>
+    <body style="";>
+        <!-- background-image: url('{% static 'back.webp' %}') -->
+    
+         
+        <div class="form">
+        <form action="/signup" method="post">
+            {% csrf_token %}
+            <h3>Signup</h3>
+      
+
+            {% for message in messages %}
+        <div class="alert alert-{{message.tags}} alert-dismissable fade show" role="alert" style="text-align: center;">
+            <strong style="justify-content: center;"></strong>{{message}}
+            <button type="submit" class="close" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+        
+        
+        </div>
+        {% endfor %}
+
+
+
+
+
+
+
+            <label for="">Username</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your Username" required><br>
+
+            <label for="">Firstname</label><br>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname" required><br>
+             
+            <label for="">Lastname</label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your lastname" required><br>
+             
+            <label for="">E-mail</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <label for="">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter a new password" required><br>
+
+            <label for="">Re-password</label><br>
+            <input type="password" id="re-password" name="re-password" placeholder="Re-enter a password" required><br>
+
+        <button class="btn" type="submit">Signup</button>
+        <p style="margin-left: 130px;font-size: large;">Don't have an account? <a href="/signin" style="text-decoration: none; color: rgb(11, 184, 141);">Signin</a></p>
+        </form>
+    </div>
+    </body>
+</html>
